@@ -1,4 +1,4 @@
-name: sauce demo Tests
+name: Sauce Demo Tests
 on:
   push:
     branches: [ main, master ]
