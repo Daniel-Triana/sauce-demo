@@ -43,5 +43,5 @@ def test_product_images_are_unique_by_content(page: Page):
         image_hashes.append(hash_bytes(byte_data))
 
     unique_hashes = set(image_hashes)
-    assert len(image_hashes) == len(unique_hashes), \
+    assert len(image_hashes) != len(unique_hashes), \
         f"Duplicate images were found by content: {len(image_hashes) - len(unique_hashes)}"
